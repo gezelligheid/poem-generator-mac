@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poem Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Poem Generator</h1>
+  <div class="form-container">
+    <p>Enter a keyword to inspire your poem:</p>
+    <form id="keywordForm">
+      <input type="text" id="keyword" placeholder="e.g. 'sunset'" required>
+      
+      <p>Select Poem Style/Theme:</p>
+      <select id="poemStyle" required>
+        <option value="haiku">Haiku</option>
+        <option value="sonnet">Sonnet</option>
+        <option value="freeverse">Free Verse</option>
+      </select>
+      
+      <p>Select Poem Length:</p>
+      <select id="poemLength" required>
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+      </select>
+      
+      <p>Select Mood/Tone:</p>
+      <select id="poemMood" required>
+        <option value="cheerful">Cheerful</option>
+        <option value="melancholic">Melancholic</option>
+        <option value="whimsical">Whimsical</option>
+      </select>
+      
+      <button type="submit">Generate Poem</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
