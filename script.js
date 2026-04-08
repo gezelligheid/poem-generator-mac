@@ -44,7 +44,7 @@ form.addEventListener('submit', async function (e) {
     window.location.href = 'results.html';
   } catch (error) {
     console.error('Webhook error:', error);
-    statusMessage.textContent = 'The request failed. Double-check the n8n test webhook and try again.';
+    statusMessage.textContent = 'The request failed. Double-check the n8n webhook and try again.';
   } finally {
     submitButton.disabled = false;
     submitButton.textContent = 'Generate Poem';
