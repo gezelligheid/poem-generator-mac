@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Generated Poem</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Your Poem</h1>
-  <div class="poem-container">
-    <div id="result"></div>
-  </div>
+  <main class="page-shell">
+    <section class="panel results-panel">
+      <div class="eyebrow">Workflow response</div>
+      <h1>Your Poem</h1>
+      <div class="poem-container">
+        <div id="result"></div>
+      </div>
+      <a class="secondary-link" href="/">Create another poem</a>
+    </section>
+  </main>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const resultContainer = document.getElementById('result');
